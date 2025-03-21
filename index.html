@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Number Pair Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="game-card">
+      <h1>Prime Number Pair Game</h1>
+      <p>Select two numbers from the options below to make a prime number!</p>
+      
+      <div id="options" class="options-container"></div>
+      
+      <div class="info">
+        <p id="feedback"></p>
+        <p id="timer">Time left: <span id="time-left">10</span>s</p>
+        <p id="attempts">Attempts left: <span id="remaining-attempts">5</span></p>
+        <p id="score">Score: <span id="current-score">0</span></p>
+      </div>
+      
+      <button id="reset-button" class="hidden">Reset Game</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
