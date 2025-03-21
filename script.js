@@ -50,26 +50,6 @@ const primeNumbers = [
   
   let selectedPair = [];
   
-  // function handleNumberSelection(number) {
-  //   if (selectedPair.length < 2) {
-  //     selectedPair.push(number);
-  //     if (selectedPair.length === 2) {
-  //       const sum = selectedPair[0] + selectedPair[1];
-  //       if (isPrime(sum)) {
-  //         feedback.textContent = `🎉 Correct! ${selectedPair[0]} + ${selectedPair[1]} = ${sum}, which is a prime number!`;
-  //         score++;
-  //         currentScore.textContent = score;
-  //         disableOptions();
-  //         clearInterval(timerInterval);
-  //         resetButton.classList.remove('hidden');
-  //       } else {
-  //         feedback.textContent = `❌ ${selectedPair[0]} + ${selectedPair[1]} = ${sum}, which is NOT a prime number. Try again!`;
-  //         selectedPair = [];
-  //       }
-  //     }
-  //   }
-  // }
-  
   function handleNumberSelection(number) {
     const buttons = optionsContainer.querySelectorAll("button");
 
@@ -138,22 +118,6 @@ const primeNumbers = [
     }, 1000);
   }
   
-  // function resetGame() {
-  //   attempts--;
-  //   if (attempts === 0) {
-  //     feedback.textContent = `❌ Game over! You couldn't find a correct prime pair.`;
-  //     resetButton.classList.remove('hidden');
-  //   } else {
-  //     feedback.textContent = '';
-  //     remainingAttempts.textContent = attempts;
-  //     timeLeft = 10;
-  //     timeLeftDisplay.textContent = timeLeft;
-  //     selectedPair = [];
-  //     renderOptions();
-  //     resetButton.classList.add('hidden');
-  //     startTimer();
-  //   }
-  // }
   function resetGame() {
     if (attempts > 0) {
         attempts--; // Decrease attempts only if greater than 0
